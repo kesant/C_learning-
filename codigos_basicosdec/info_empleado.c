@@ -1,9 +1,21 @@
 #include <stdio.h>
 
 int main (){/*indicamos que contendra la parte principal de nuestro codigo */
-    int edad=25;
-    float sueldoAnual=300000;
+    int edad;
+    float sueldoAnual;
     char departamento;
-    printf("aprendiendo con c los cursos delinkedin learning ");
+
+    printf("\nA continuacion amos a pedirle algunos datos personales\n ");
+
+    printf("Que edad tiene\n ?");
+    scanf("%d",&edad);
+
+    printf("Cual es el sueldo anual\n?");
+    scanf("%d",&sueldoAnual);
+
+    printf("A que departamento pertenece?\n");
+    scanf(" %c",departamento);
+
+
     return 0;
 }
