@@ -1,12 +1,13 @@
 #include <stdio.h>
+int anioActual=2022;
+
+#define PRECIO_HORAS_EXTRA 60;
 
 int main (){/*indicamos que contendra la parte principal de nuestro codigo */
     int edad;
-    int anioActual=2022;
     int anioNacimiento;
     int horasExtraTrabajadas;
     float totalHorasExtrasAPagar;
-    float precioHoraExtra=60;
     float sueldoAnual;
     int haRealizadoHorasExtras;
     char departamento;
@@ -25,7 +26,7 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
     printf("Cuantas horas extras has trabajado este anio?: ");
     scanf("%d",&horasExtraTrabajadas);
 
-    totalHorasExtrasAPagar=horasExtraTrabajadas*precioHoraExtra;
+    totalHorasExtrasAPagar=horasExtraTrabajadas*PRECIO_HORAS_EXTRA;
     anioNacimiento=anioActual-edad;
 
     haRealizadoHorasExtras=totalHorasExtrasAPagar;
