@@ -8,13 +8,13 @@ int main(){
     printf("Por favor, introduce la siguiente informacion :\n");
     
     printf("dia de nacimiento: ");
-    scanf("%d",diaNacimiento);
+    scanf("%d",&diaNacimiento);
 
     printf("Mes de nacimiento: ");
-    scanf("%d",mesNacimiento);
+    scanf("%d",&mesNacimiento);
 
     printf("Anio de nacimiento: ");
-    scanf("%d",anioNacimiento);
+    scanf("%d",&anioNacimiento);
 
     return 0;
 }
