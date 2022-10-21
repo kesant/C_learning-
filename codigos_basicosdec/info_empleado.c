@@ -1,15 +1,12 @@
 #include <stdio.h>
+#define PRECIO_HORAS_EXTRA 60;// definimos una constante tmabien denomidado macro
+#define BONIFICACION_DEPARTAMENTO_A 2750;
+//los macros deben ir antes de las variables globales
 int anioActual=2022;
 
-#define PRECIO_HORAS_EXTRA 60;
-
 int main (){/*indicamos que contendra la parte principal de nuestro codigo */
-    int edad;
-    int anioNacimiento;
-    int horasExtraTrabajadas;
-    float totalHorasExtrasAPagar;
-    float sueldoAnual;
-    int haRealizadoHorasExtras;
+    int edad,anioNacimiento, horasExtraTrabajadas,haRealizadoHorasExtras;
+    float totalHorasExtrasAPagar,sueldoAnual,sueldoTotalAnual;
     char departamento;
 
     printf("\nA continuacion amos a pedirle algunos datos personales\n ");
@@ -31,6 +28,11 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
 
     haRealizadoHorasExtras=totalHorasExtrasAPagar;
 
+    if (departamento =='A'||departamento =='a'){
+        sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
+
+
+    }
 
 
 
