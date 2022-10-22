@@ -30,11 +30,17 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
 
     haRealizadoHorasExtras=totalHorasExtrasAPagar;
 
-    // if (departamento =='A'||departamento =='a'){
-    //     sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
+    sueldoAnual=0;
+
+    for(int mes=0; mes<12; mes++){
+        sueldoAnual=sueldoAnual+ingresosMnsualesDuranteUnAnio[mes];
+    }
+
+    if (departamento =='A'||departamento =='a'){
+        sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
 
 
-    // }
+    }
 
 
 
