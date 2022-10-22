@@ -6,7 +6,7 @@ int anioActual=2022;
 
 int main (){/*indicamos que contendra la parte principal de nuestro codigo */
     int edad,anioNacimiento, horasExtraTrabajadas,haRealizadoHorasExtras;
-    float totalHorasExtrasAPagar,sueldoAnual,sueldoTotalAnual;
+    float totalHorasExtrasAPagar,sueldoAnual,sueldoTotalAnual,ingresosMnsualesDuranteUnAnio[12];
     char departamento;
 
     printf("\nA continuacion amos a pedirle algunos datos personales\n ");
@@ -14,8 +14,10 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
     printf("Que edad tiene\n ?");
     scanf("%d",&edad);
 
-    printf("Cual es el sueldo anual\n?");
-    scanf("%d",&sueldoAnual);
+    for(int mes=0; mes<12; mes++){
+        printf("Cual es su sueldo para el mes %d?: ",mes+1);
+        scanf("%f",&ingresosMnsualesDuranteUnAnio[mes]);       
+    }
 
     printf("A que departamento pertenece?\n");
     scanf(" %c",&departamento);
@@ -28,11 +30,11 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
 
     haRealizadoHorasExtras=totalHorasExtrasAPagar;
 
-    if (departamento =='A'||departamento =='a'){
-        sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
+    // if (departamento =='A'||departamento =='a'){
+    //     sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
 
 
-    }
+    // }
 
 
 
