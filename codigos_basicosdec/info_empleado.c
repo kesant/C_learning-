@@ -3,7 +3,7 @@
 #define BONIFICACION_DEPARTAMENTO_A 2750;
 //los macros deben ir antes de las variables globales
 int anioActual=2022;
-
+float calcularSueldoAnual (float ingresosMnsualesDuranteUnAnio[]);//declaramos la funcion
 int main (){/*indicamos que contendra la parte principal de nuestro codigo */
     int edad,anioNacimiento, horasExtraTrabajadas,haRealizadoHorasExtras;
     float totalHorasExtrasAPagar,sueldoAnual,sueldoTotalAnual,ingresosMnsualesDuranteUnAnio[12];
@@ -30,11 +30,7 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
 
     haRealizadoHorasExtras=totalHorasExtrasAPagar;
 
-    sueldoAnual=0;
-
-    for(int mes=0; mes<12; mes++){
-        sueldoAnual=sueldoAnual+ingresosMnsualesDuranteUnAnio[mes];
-    }
+    sueldoAnual=calcularSueldoAnual (ingresosMnsualesDuranteUnAnio);
 
     if (departamento =='A'||departamento =='a'){
         sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
@@ -45,4 +41,13 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
 
 
     return 0;
+}
+
+//funcion 
+float calcularSueldoAnual (float ingresosMnsualesDuranteUnAnio[]){
+        float sueldoAnual=0;
+        for(int mes=0; mes<12; mes++){
+        sueldoAnual=sueldoAnual+ingresosMnsualesDuranteUnAnio[mes];
+    }
+    return sueldoAnual;
 }
