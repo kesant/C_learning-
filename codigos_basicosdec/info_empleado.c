@@ -34,14 +34,10 @@ int main (){/*indicamos que contendra la parte principal de nuestro codigo */
 
     if (departamento =='A'||departamento =='a'){
         sueldoTotalAnual=sueldoAnual+BONIFICACION_DEPARTAMENTO_A;
-
-
     }
-
-
-
     return 0;
 }
+
 
 //funcion 
 float calcularSueldoAnual (float ingresosMnsualesDuranteUnAnio[]){
