@@ -10,4 +10,11 @@ int main(){
 	identificadoresEmpleados[8];//obtenemos el noveno elemento
 	*(identificadoresEmpleados+8);//obtenemos el noveno elemento
 	//esta ultimo enunciado es el mas eficiente en compilacion
+
+	//para arrays y punteros de varias dimensiones 
+	float sueldoMensualesEmpleados[10][12];
+	int (*sueldosEmpleados)[12];
+	
+	sueldoMensualesEmpleados[4][5];
+	*(*(sueldosEmpleados+4)+5);
 }
