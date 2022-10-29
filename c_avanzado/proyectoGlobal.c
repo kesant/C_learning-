@@ -20,8 +20,10 @@ typedef struct
     char *apellidos;
 
 }Empleado;
-
-
+Empleado vendedor;
+vendedor.nombre=(char*)malloc(strlen(nombreTemporal)*sizeof(char));
+vendedor.apellidos=(char*)malloc(strlen(apellidosTemporal)*sizeof(char));
+//almacenamos de forma temporal en una variable propia mediante el uso de registros 2 arrays dinamicos que ocupan exactamente el espacio que deben ocupar 
 
     return 0;
 }
