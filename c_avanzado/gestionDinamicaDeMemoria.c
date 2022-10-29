@@ -28,5 +28,20 @@ int main(){
 	free(array1);
 	free(array2);
 	free(array3);
+//la funcion realloc en C 
+	puts("Unidad de Urgencias");
+	puts("-----------------------");
+	int consultalibre,numAvisos=0;
+	int *ordenConsultasLibres=(int*)malloc(numAvisos*sizeof(int));)
+
+	while(1){
+	printf("Introduce la consulta que se ha quedado libre : ");
+	scanf("%d",&consultalibre);	
+	numAvisos++;
+	ordenConsultasLibres=(int*)realloc(ordenConsultasLibres,numAvisos*sizeof(int));
+	ordenConsultasLibres[numAvisos-1]=consultaLibre;
+}
+
+
 	return 0;
 }
