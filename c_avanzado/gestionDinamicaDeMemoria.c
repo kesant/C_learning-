@@ -20,6 +20,13 @@ int main(){
 		scanf("%f",&numProductosVendidos[i]); 
     }
 //como liberar memoria asignada en C 
-
+/*si continuamente reservamos memoria y no elminamos memoria que no necesitamos podriamos llegar a agotar la memoria disponible.*/
+	int *array1=(int*)malloc(150*sizeof(int));
+	float *array2= (int*)malloc(150*sizeof(int));
+	char *array3=(char*)malloc(150*sizeof(char));
+	//liberar memoria reservada con la funcion free()
+	free(array1);
+	free(array2);
+	free(array3);
 	return 0;
 }
