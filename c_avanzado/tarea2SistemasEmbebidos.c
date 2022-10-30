@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 float calculoDescuento(char inicialProducto[],float costo[],int cantidadProductos,float *costoTotal1,float *costoDescuento,float *descuento);
 void informe(char inicialProducto[],int cantidadProductos,float costoValor1,float costoDescuento,float descuento);
 int main (){
