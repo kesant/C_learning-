@@ -17,15 +17,19 @@ almacenarSueldoAnual(float s);
 int main(){
     char nombreTemporal[100];
     char apellidosTemporal[250];
-
+    float sueldoAnualTemporal;
     puts("Por favor , Introduce la siguiente informacion : ");
     printf("-Nombre: ");
     gets(nombreTemporal);//para la lectura de cadena de caracteres
-
+    almacenarNombre(nombreTemporal);
 
     printf("-Apellidos: ");
     gets(apellidosTemporal);
+    almacenarApellido(apellidosTemporal);
 
+    printf("_sueldo anual_");
+    scanf("%f",&sueldoAnualTemporal);
+    almacenarSueldoAnual(sueldoAnualTemporal);
 
 
 
