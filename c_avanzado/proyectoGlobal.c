@@ -11,9 +11,9 @@ typedef struct
 }Empleado;
 Empleado vendedor;
 //declaramos las funciones 
-almacenarNombre(char *n);
-almacenarApellido(char *a);
-almacenarSueldoAnual(float s);
+void almacenarNombre(char *n);
+void almacenarApellido(char *a);
+void almacenarSueldoAnual(float s);
 int main(){
     char nombreTemporal[100];
     char apellidosTemporal[250];
