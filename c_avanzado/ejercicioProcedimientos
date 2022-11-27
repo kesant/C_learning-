@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void mostrarSaludoPersonalizado(char nombre [],char apellido[], size_t identificador );
+int main(){
+
+    mostrarSaludoPersonalizado("eliezer","lopez",18);
+
+    return 0;
+}
+
+void mostrarSaludoPersonalizado(char nombre [],char apellido[], size_t identificador ){
+    print("hola %s %s! Tu identificador es el N %zu", nombre,apellido,identificador);
+}
