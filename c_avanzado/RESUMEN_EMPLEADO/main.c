@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include "empleado.h"
+
 int main(){
     char nombreTemporal[100];
     char apellidosTemporal[250];
