@@ -6,7 +6,7 @@
 #include<string.h>
 
 
-
+/*
 typedef struct 
 {
     char *nombre;
@@ -14,6 +14,7 @@ typedef struct
     float sueldoAnual;
 
 }Empleado;
+*/
 
 extern Empleado vendedor;
 // al agregar la palabra extern podemos utilizar la variable definida aunque este en otro
