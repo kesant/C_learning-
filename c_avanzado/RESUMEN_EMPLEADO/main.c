@@ -17,7 +17,7 @@ int main(){
     printf("_sueldo anual_");
     scanf("%f",&sueldoAnualTemporal);
     almacenarSueldoAnual(sueldoAnualTemporal);
-
+    MostrarAgradecimiento()
 
 
 //creamos un registro de tipo empleado que contenga los campos nombre y apellido.
